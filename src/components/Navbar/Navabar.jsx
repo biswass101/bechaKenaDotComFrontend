@@ -7,11 +7,14 @@ import { FaMagnifyingGlass } from "react-icons/fa6";
 import { GoHeart } from "react-icons/go";
 import { ImSearch } from "react-icons/im";
 
+import siteLogo from '../../assets/bechaKenaLogo-removebg-preview.png'
+import SemiNavBar from "../SemiNavBar/SemiNavBar";
+
 const Navabar = () => {
   return (
     <>
       <div className="container ">
-        <div className="cntnt flex justify-around ">
+        <div className="cntnt flex justify-around items-center">
           {/* part 1 */}
           <div className="user-profile-cart-love flex items-center  gap-3  ">
             <div className="user-profile transition-colors duration-200 ease-in-out hover:bg-black border rounded-full border-gray-500  ">
@@ -41,7 +44,7 @@ const Navabar = () => {
           </div>
           {/* done  */}
 
-          <div className="search-bar bg-white border px-2 border-gray-300 flex justify-between items-center rounded-full w-[50%]">
+          <div className="search-bar bg-white border p-1 border-gray-300 flex justify-between items-center rounded-full w-[50%]">
             <div className="seatc-icon-container bg-blue-600 transition-colors duration-200 ease-in-out hover:bg-black hover:text-white rounded-full p-4">
               <svg
                 xmlns="http://www.w3.org/2000/svg"
@@ -98,10 +101,11 @@ const Navabar = () => {
             </div>
           </div> */}
           <div className="logo">
-            <p>Bechakena.com</p>
+            <img src={siteLogo} alt={'site logo'} className="w-32"/>
           </div>
         </div>
       </div>
+      <SemiNavBar/>
     </>
   );
 };
