@@ -1,9 +1,9 @@
 import React from "react";
 import { BsCart4 } from "react-icons/bs";
 
-import { FaCaretDown, FaRegUserCircle, FaShoppingCart } from "react-icons/fa";
+import { FaCaretDown, FaRegUserCircle,   } from "react-icons/fa";
 import { FaMagnifyingGlass } from "react-icons/fa6";
-import { FiSearch } from "react-icons/fi";
+ 
 import { GoHeart } from "react-icons/go";
 
 const Navabar = () => {
